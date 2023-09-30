@@ -1,0 +1,31 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV File Upload and Prediction</title>
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body>
+    <h1>CSV File Upload and Prediction</h1>
+    
+    <form id="upload-form" action="/predict" method="POST" enctype="multipart/form-data">
+        <label for="csv-file">Upload a CSV File:</label>
+        <input type="file" name="file" id="csv-file" accept=".csv" required>
+        <button type="submit">Predict</button>
+    </form>
+
+    <div id="prediction-results">
+        <h2>Prediction Results:</h2>
+        <ul>
+                <li>{{ prediction_results }}</li>
+        </ul>
+    </div>
+
+    <script>
+        // Add your JavaScript code here, if needed
+    </script>
+</body>
+</html> 
